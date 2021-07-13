@@ -115,7 +115,7 @@ c/    ----------------------------
          gaussZ= bgaussZ(ib)
          zpos  = bzpos(ib)
          ptype = nbptype(ib)
-	
+
 c/    Calculate beam stopping cross sections:
 c/    --------------------------------------
          call Beams_mfp
@@ -123,7 +123,7 @@ c/    --------------------------------------
 c/    Normalization factor for current distribution:
 c/    ---------------------------------------------
 c/    Case for circular beam:
-	
+
          if (shape.eq.0) then
             if (ptype.eq.0) cnorm = 1.0/(pi*rbeam**2)
             if (ptype.eq.1) then
@@ -188,7 +188,7 @@ c/    Calculate contributions from outside intersections:
                   hplus(ie) = alongz(ie)
                   ksiplus(ie) = avksi(ie)
                enddo
-	
+
 c/    Calculate contributions from inside intersections:
                
                sgn = -1.0
@@ -199,7 +199,7 @@ c/    Calculate contributions from inside intersections:
                enddo
  
 c/    Total HOFR and average pitch angle at flux zone -iflux- :
-	
+
                do ie = 1, 3
                   if (fbpwr(ie,ib).ne.0.0) then
                      hofr(iflux,ie,ib) = cnorm*factr(ie)*
@@ -215,13 +215,13 @@ c/    Total HOFR and average pitch angle at flux zone -iflux- :
          enddo
 
 c/    Set deposition profile at the edge = 0
-	
+
          do ie = 1, 3
             hofr(nrho,ie,ib) = 0.0
             pitchangl(nrho,ie,ib) = 0.0
          enddo
       enddo
-	
+
 c/    Calculate beam shinethrough, and other quantities of interest:
 c/    -------------------------------------------------------------
       do ib = 1, nbeams
@@ -247,7 +247,7 @@ c/    ---------------------------------------------------
             if (shinethru(ie,ib).lt.0.0) shinethru(ie,ib) = 0.0
          enddo
       enddo
-	
+
 c/    Calculate the total NB power loss (shinethrough or missed
 c/    the plasma, which is also part of shinethrough in this model).
 c/    -------------------------------------------------------------

@@ -60,7 +60,8 @@ c/      ----------------------------------------
 c/      Local variables:
 
         integer i, j, ip1, nm1, nbinp, nbout
-        real e0, te0, ti0, ea, shft0, dlr, tt, pi, den0, L_tor, sumzef, rn2, ssum
+        real e0, te0, ti0, ea, shft0, dlr, tt, pi, den0, L_tor, sumzef, 
+     .     rn2, ssum
         CHARACTER(len=100) arg
         real r(mxrho), rmid(mxrho)
 
@@ -156,7 +157,7 @@ c       den0 = (1.0 + alfan - alfan*edgavr) * denav
 
         do  i = 1, n
 c            tt = 1.0 - (r(i) / a)**2
-c	        tekev(i) = (te0 - tea) * tt**alfat + tea
+c           tekev(i) = (te0 - tea) * tt**alfat + tea
 c           tikev(i) = (ti0 - tia) * tt**alfat + tia
 c           ne20(i) = (den0 - edgavr*denav) * tt**alfan + edgavr*denav
             do j = 2, nion

@@ -23,7 +23,7 @@ c/    07/07/98: Fixed bug in calculation of electron logarithm
       implicit none
       integer isp
       real ami, amf, clog, dne, efast, elim, te, te10, 
-     .	   zi, zf
+     .      zi, zf
       te10 = te/10.0
       elim = 100.*amf*(zf*zi)**2
 

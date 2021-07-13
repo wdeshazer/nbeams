@@ -48,7 +48,7 @@ c/    ------------------
          rterm = Sqrt(elecTemp(i) * fastEnergy * fastMass /
      .      elecDensity(i))
          sumbrack = 0.0
-	 do j = 1, nions
+      do j = 1, nions
             coulLogi =  19.1 + Log((atw(j) / (fastMass+atw(j)))*rterm)
             sumbrack = sumbrack + dni(i,j) * znum(j)**2 
      .         * coulLogi / atw(j)

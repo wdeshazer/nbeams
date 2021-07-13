@@ -1,6 +1,6 @@
       subroutine sigfit(ebeam,dene,te,denz, sig)
 c-----------------------------------------------------------------------
-c.....author:						 
+c.....author:                        
 c       Charles D. Boley
 c       Lawrence Livermore National Laboratory
 c       L-574
