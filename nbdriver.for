@@ -362,5 +362,5 @@ c/      ----------------------------------------------------
 
 c/      close(nbout,status='unknown')
       close(nbout)
-      stop
+c/      stop
       end

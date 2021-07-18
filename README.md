@@ -76,4 +76,6 @@ An executable named nbeams is produced.
 ###
 To test the installation type:
 
-> nbeams < test.inp
+> nbeams inbeams.dat > out.dat
+
+This will produce both a file called outbeams.dat and an out.dat with example results. They may be compared to outbeams_reference.dat and out.dat for confirmation of a succesful compilation.
